@@ -105,7 +105,7 @@ def calculate_policy_outcomes(
             
             if (month_index - sip_duration_months) > 0 and (month_index - sip_duration_months) % 12 == 0:
                 swp_year_counter += 1
-                current_target_swp_monthly_payout = scheduled_last_year_swp_monthly_payout*(1+ SWP_ANNUAL_PAYOUT_GROWTH_RATE)
+                current_target_swp_monthly_payout = scheduled_last_year_swp_monthly_payout * (1 + swp_annual_payout_growth_rate)
                 scheduled_last_year_swp_monthly_payout = current_target_swp_monthly_payout
             
             if hybrid_swp_corpus <= 0:
